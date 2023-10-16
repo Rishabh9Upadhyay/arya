@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container4 form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container4 {
+            background-color: red;
+            border-radius: 10px;
+            width: 300px;
+            border: 2px dashed blueviolet;
+            padding: 20px;
+        }
+
+        form >input {
+            margin: 10px 0;
+            padding: 5px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container4">
+        <h2>Add Student</h2>
+        <hr>
+        <form action="" method="post">
+            <label for="SName">Student Name</label>
+            <input type="text" name="SName" placeholder="Enter Name" required>
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" placeholder="Enter Phone No" required>
+            <label for="emai">Enter Mail</label>
+            <input type="email" name="emai" placeholder="Enter mail" required>
+            <label for="gender">Gender</label>
+            <div>
+                <input type="radio" name="gender" required>Male
+                <input type="radio" name="gender" required>Female
+            </div>
+            <input type="submit" value="Add Student">
+            <a href="/">Back to home page</a>
+        </form>
+    </div>
+</body>
+
+</html>
